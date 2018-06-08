@@ -70,7 +70,7 @@ function createRock(x) {
 
   rock.style.top = top;
   
- GAME.append(rock);
+ GAME.appendChild(rock);
 moveRock(rock);
 }
 
@@ -163,7 +163,7 @@ function moveDodgerLeft() {
   var left = parseInt(leftNumbers, 10)
  
   if (left > 0) {
-    DODGER.style.left = `${left - 1}px`
+    DODGER.style.left = `${left - 3}px`
   }
 }
 
@@ -172,7 +172,7 @@ function moveDodgerRight() {
   var left = parseInt(leftNumbers, 10)
  
   if (left < 360) {
-    DODGER.style.left = `${left + 1}px`
+    DODGER.style.left = `${left + 3}px`
   }
 }
 
